@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Web App</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        /* Navbar */
+        header {
+            background: #0d6efd;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #0d6efd, #4dabf7);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            padding: 14px 30px;
+            border: none;
+            background: white;
+            color: #0d6efd;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #e7f1ff;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ProWeb</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Build Professional Web Apps</h2>
+    <p>Modern, fast, and scalable web solutions</p>
+    <button onclick="showAlert()">Get Started</button>
+</section>
+
+<section class="features">
+    <div class="card">
+        <h3>⚡ Fast Performance</h3>
+        <p>Optimized for speed and smooth user experience.</p>
+    </div>
+    <div class="card">
+        <h3>🔒 Secure</h3>
+        <p>Built with best practices for security and reliability.</p>
+    </div>
+    <div class="card">
+        <h3>📱 Responsive</h3>
+        <p>Looks great on desktop, tablet, and mobile devices.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ProWeb. All rights reserved.</p>
+</footer>
+
+<script>
+    function showAlert() {
+        alert("Welcome! Your professional web app is ready 🚀");
+    }
+</script>
+
+</body>
+</html>
